@@ -9,7 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Water Reminder App")
+        TabView {
+            HomeView().tabItem({
+                Image(systemName: Constants.TabBar.Home.icon)
+                Text("\(Constants.TabBar.Home.name)")
+            }).tag(0)
+            
+            HistoryView().tabItem({
+                Image(systemName: Constants.TabBar.History.icon)
+                Text("\(Constants.TabBar.History.name)")
+            }).tag(1)
+            
+            ConfigurationView().tabItem({
+                Image(systemName: Constants.TabBar.Config.icon)
+                Text("\(Constants.TabBar.Config.name)")
+            }).tag(2)
+        }
     }
 }
 
