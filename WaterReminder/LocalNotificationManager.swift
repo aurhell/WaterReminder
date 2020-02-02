@@ -20,6 +20,7 @@ class LocalNotificationManager {
             .current()
             .requestAuthorization(options: [.alert, .badge, .alert]) { granted, error in
                 if granted == true && error == nil {
+                    self.scheduleNotifications()
                     // We have permission!
                 }
         }
@@ -40,6 +41,19 @@ class LocalNotificationManager {
             UNUserNotificationCenter.current().add(request) { error in
                 guard error == nil else { return }
                 print("Scheduling notification with id: \(notification.id)")
+            }
+        }
+    }
+    
+    func schedule() -> Void {
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            switch settings.authorizationStatus {
+            case .notDetermined:
+                self.requestPermission()
+            case .authorized, .provisional:
+                self.scheduleNotifications()
+            default:
+                break
             }
         }
     }

@@ -12,9 +12,9 @@ struct HomeView: View {
     func setNotification() -> Void {
         let notificationManager = LocalNotificationManager()
 
-        notificationManager.requestPermission()
         notificationManager.addNotification(title: "Il est temps de boire un peu d'eau 😉")
-        notificationManager.scheduleNotifications()
+        notificationManager.schedule()
+        
     }
     
     var body: some View {
