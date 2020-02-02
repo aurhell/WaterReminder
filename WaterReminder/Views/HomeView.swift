@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    func setNotification() -> Void {
+        let notificationManager = LocalNotificationManager()
+
+        notificationManager.requestPermission()
+        notificationManager.addNotification(title: "Il est temps de boire un peu d'eau 😉")
+        notificationManager.scheduleNotifications()
+    }
+    
     var body: some View {
-        Text("Hello, i'm the home view !")
+        Button(action: {
+            self.setNotification()
+        }) {
+            Text("Créer une notification")
+        }
     }
 }
 

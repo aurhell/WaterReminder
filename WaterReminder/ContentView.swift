@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
+        TabView() {
             HomeView().tabItem({
                 Image(systemName: Constants.TabBar.Home.icon)
                 Text("\(Constants.TabBar.Home.name)")

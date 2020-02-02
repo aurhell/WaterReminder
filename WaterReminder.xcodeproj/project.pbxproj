@@ -19,6 +19,7 @@
 		0D29676323E6CCB20024D421 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29676223E6CCB20024D421 /* ConfigurationView.swift */; };
 		0D29676523E6CDDA0024D421 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29676423E6CDDA0024D421 /* HomeView.swift */; };
 		0D29676823E6DC040024D421 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29676723E6DC040024D421 /* Constants.swift */; };
+		0D29676A23E703500024D421 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29676923E703500024D421 /* LocalNotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0D29676223E6CCB20024D421 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
 		0D29676423E6CDDA0024D421 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0D29676723E6DC040024D421 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D29676923E703500024D421 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				0D29674923E6C9690024D421 /* WaterReminder.xcdatamodeld */,
 				0D29675023E6C96B0024D421 /* Preview Content */,
 				0D29676723E6DC040024D421 /* Constants.swift */,
+				0D29676923E703500024D421 /* LocalNotificationManager.swift */,
 			);
 			path = WaterReminder;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				0D29676323E6CCB20024D421 /* ConfigurationView.swift in Sources */,
 				0D29674623E6C9690024D421 /* AppDelegate.swift in Sources */,
 				0D29674D23E6C9690024D421 /* ContentView.swift in Sources */,
+				0D29676A23E703500024D421 /* LocalNotificationManager.swift in Sources */,
 				0D29674823E6C9690024D421 /* SceneDelegate.swift in Sources */,
 				0D29676823E6DC040024D421 /* Constants.swift in Sources */,
 			);
